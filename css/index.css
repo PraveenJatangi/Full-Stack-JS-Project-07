@@ -1,5 +1,5 @@
 * {
-  margin: 15px 20px;
+  margin: 15px 10px;
 }
 body {
   font-family: Poppins;
@@ -13,12 +13,13 @@ nav {
 .nav-items {
   display: flex;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 100px;
+  gap: 40px;
 }
 .nav-item {
   color: #7e7e7e;
   font-size: 15px;
-  margin-right: 60px;
+  
 }
 .active-item {
   font-size:px;
@@ -26,8 +27,9 @@ nav {
   text-shadow: 1px 1px 1px #fe6139;
 }
 nav img:last-child {
-  width: 20%;
-  margin-right: 0;
+  width: 250px;
+  float: right;
+  
 }
 nav img:first-child {
   width: 130px;
@@ -40,8 +42,8 @@ nav img:first-child {
 }
 /*  ----- intro left section ----- */
 .left-section {
-  margin-top: 0px;
-  max-width: 900px;
+  
+  max-width: 500px;
 }
 h3 {
   font-size: 30px;
@@ -54,9 +56,8 @@ h3 {
 }
 .intro-section .left-section h1 {
   font-size: 70px;
-  font-weight: 500px;
-  white-space: nowrap;
-  text-shadow: 3px 0px 2px black;
+  font-weight: 700;
+  white-space: nowrap; 
 }
 /* ----- sub headlines part ------ */
 
@@ -98,41 +99,46 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.headphone-div {
+  margin-top: -210px;
 }
 .headphone-div img:last-child {
-  width: 430px;
-  margin-top: -60px;
+  width: 400px;
 }
 
 /*  ----- discount star img ------- */
 .headphone-div img:first-child {
-  position: absolute;
-  top: 400px;
-  right: 450px;
   width: 120px;
+  position: relative;
+  top: 500px;
+  right: 60px; 
 }
 .discount-content {
-  position: absolute;
-  top: 415px;
-  right: 450px;
-  color: white;
+  position: relative;
+  top: 375px;
+  right: 50px;
+  color: rgb(235, 225, 225); 
+}
+h1{
+  font-size: 25px;
+  
 }
 h4 {
-  margin-bottom: -19px;
+  font-size: 15px;
+  margin-bottom: -20px;
 }
 
 /*  rigth bottom part of dots */
 .dots {
   display: flex;
+
 }
 .dot {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  margin-top: -30px;
-  margin-bottom: 0px;
+  position: relative; 
+  top: -30px;
+  bottom: 0px;
 }
 .yellow-dot {
   background-color: yellow;
@@ -142,4 +148,97 @@ h4 {
 }
 .black-dot {
   background-color: black;
+}
+.right-section .action-btn{
+  position: relative; 
+  bottom: 35px; 
+}
+
+
+@media only screen and (max-width: 480px){
+  .intro-section{
+    flex-direction: column-reverse;
+  }
+  .left-section {
+    margin: auto; 
+  }
+  .right-section {
+   
+    margin: -200px 50px 0px 150px; 
+  }
+  .left-section h3 img {
+    position: relative;
+    top: 10px;
+    width: 40px;
+  }
+  nav  {
+    overflow-x: auto;
+  }
+ 
+}
+@media only screen and (max-width: 1250px){
+  .intro-section .left-section h1 { 
+    white-space: inherit; 
+  }
+}
+@media only screen and (max-width: 900px){
+  .headphone-div img:last-child {
+    width: 300px;
+    
+  }
+  .intro-section .left-section h1 {
+    font-size: 70px;
+    font-weight: 500px;
+   
+    text-shadow: 3px 0px 2px black;
+    
+  }
+  .intro-section .left-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    white-space: inherit;
+    
+  }
+  .headphone-div img:first-child {
+    width: 90px;
+    top: 400px;
+  }
+  .discount-content {
+    top: 300px; 
+  }
+  h1{
+    font-size: 20px;
+    
+  }
+  h4 {
+    font-size: 12px;
+    margin-bottom: -20px;
+  }
+  .nav-items {
+    
+    margin-left: 30px;
+    gap: 10px;
+  }
+  nav img:last-child {
+    width: 200px;
+    
+  }
+  nav img:first-child {
+    width: 100px;
+  }
+  .sub-headlines {
+    font-size: 20px;
+  
+    margin-left: 0px;
+  }
+  .sub-headlines h5 img {
+  
+    width: 12px;
+  }
+  .text {
+    
+    font-size: 10px;
+  }
+  
+
 }
